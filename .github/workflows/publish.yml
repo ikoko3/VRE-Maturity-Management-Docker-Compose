@@ -21,10 +21,10 @@ jobs:
       matrix:
         image:
           - name: keycloak-preseed
-            context: ./images/keycloak
+            context: keycloak
             file: keycloak/Dockerfile
           - name: mongo-preseed
-            context: ./images/mongo
+            context: mongo
             file: mongo/Dockerfile
 
     steps:
