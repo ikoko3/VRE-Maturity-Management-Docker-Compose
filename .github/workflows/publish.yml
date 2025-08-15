@@ -22,10 +22,10 @@ jobs:
         image:
           - name: keycloak-preseed
             context: ./images/keycloak
-            file: ./images/keycloak/Dockerfile
+            file: keycloak/Dockerfile
           - name: mongo-preseed
             context: ./images/mongo
-            file: ./images/mongo/Dockerfile
+            file: mongo/Dockerfile
 
     steps:
       - name: Checkout
