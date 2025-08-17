@@ -42,7 +42,8 @@ services:
     environment:
       # use the service name "mongodb" for in-cluster DNS
       MONGO_URI: mongodb://root:example@mongodb:27017/vre_level?authSource=admin
-      OIDC_ISSUER_URL: http://keycloak:8080/realms/vre
+      JWT_CERTS_URL: http://keycloak:8080/realms/vre/protocol/openid-connect/certs
+      JWT_ISSUER: http://localhost:8080/realms/vre
       OIDC_CLIENT_ID: app-frontend
       OIDC_CLIENT_SECRET: change_me
       PUBLIC_FRONTEND_URL: http://localhost:4000
