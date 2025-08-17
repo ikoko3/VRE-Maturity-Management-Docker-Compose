@@ -48,10 +48,12 @@ docker compose up -d
 coordinator@test.com
 myuser@test.com
 developer@test.com
+```
+```
 Password (all): 123
 ```
 
-> These accounts are for **demo/testing only**.
+> These accounts are for **demo/testing only**. 
 
 ### Keycloak admin (bootstrap)
 
@@ -59,6 +61,10 @@ Password (all): 123
 Username: admin
 Password: change_me
 ```
+
+### Notes on user permissions
+
+There are 2 layers of user permissions. The lab related roles can be assigned via the application on each lab. The VRE "global" roles are specified via the Keycloak admin platform. 
 
 ---
 
